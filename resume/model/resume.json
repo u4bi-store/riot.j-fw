@@ -1,8 +1,17 @@
 {
+  "link":{
+    "facebook":"",
+    "github":"",
+    "instagram":"",
+    "linkedin":"",
+    "twitter":"",
+    "website":""
+  },
   "user":{
     "name" : "",
     "jab" : "",
     "bio" : ""
+    "email" : ""
   },
   "project":[
     {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "bio" : ""},
