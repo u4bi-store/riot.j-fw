@@ -10,8 +10,9 @@
     var self = this;
     
     marmottajax({
-        url: "data.json",
+        url: 'data.json',
         json: true
+      
     }).success(function(result) {
         self.message = result;
         self.update();
