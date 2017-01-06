@@ -1,17 +1,17 @@
 {
 	"link": {
 		"facebook": "",
-		"github": "",
+		"github": "https://github.com/u4bi",
 		"instagram": "",
 		"linkedin": "",
 		"twitter": "",
 		"website": ""
 	},
 	"user": {
-		"name": "",
-		"jab": "",
-		"bio": "",
-		"email": ""
+		"name": "Myungjae Yu",
+		"jab": "Web/App Developer",
+		"bio": "Hello,",
+		"email": "u4bi@u4bi.com"
 	},
 	"project": [{
 		"name": "",
@@ -33,11 +33,11 @@
 		"bio": ""
 	}],
 	"skill": [{
-		"title": "",
+		"title": "Web Technologies",
 		"content": [{
-			"name": ["", "", "", ""]
+			"name": ["HTML", "CSS", "JavaScript", "TypeScript"]
 		}, {
-			"name": ["", "", "", ""]
+			"name": ["Servlets"]
 		}]
 	}, {
 		"title": "",
