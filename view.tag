@@ -15,6 +15,7 @@
     }).success(function(result) {
         self.message = result;
         self.update();
+      
     });
     
   </script>
