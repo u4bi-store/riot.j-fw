@@ -50,4 +50,7 @@
     /* 노드체크*/
     isDone(item){ return item.done; }
   </script>
+  
+  <style> :scope { font-size: 2rem }</style>
+  
 </todo>

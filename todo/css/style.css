@@ -1,0 +1,12 @@
+input[type=checkbox]:checked{
+  color: red;
+}
+
+button{
+  border: none;
+  padding: 10px 15px;
+}
+
+button:enabled{
+  cursor: pointer;
+}
