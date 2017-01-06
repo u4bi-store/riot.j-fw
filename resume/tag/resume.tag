@@ -80,5 +80,7 @@
     </footer>
   
   <script>
+    this.resume = opts.data;
+    console.log(this.resume);
   </script>
 </resume>
