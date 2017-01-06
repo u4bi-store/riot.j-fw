@@ -1,50 +1,92 @@
 {
-  "link":{
-    "facebook":"",
-    "github":"",
-    "instagram":"",
-    "linkedin":"",
-    "twitter":"",
-    "website":""
-  },
-  "user":{
-    "name" : "",
-    "jab" : "",
-    "bio" : "",
-    "email" : ""
-  },
-  "project":[
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "bio" : ""},
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "bio" : ""},
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "bio" : ""}
-  ],
-  "skill":[
-    {
-      "title":"",
-      "content":[
-        {"name": ["", "", "", ""]},
-        {"name": ["", "", "", ""]}
-      ]
-    },
-    {
-      "title":"",
-      "content":[
-        {"name": ["", "", "", ""]},
-        {"name": ["", "", "", ""]}
-      ]
-    }
-  ],
-  "exper":[
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ["",""] },
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ["",""] },
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ["",""] }
-  ],
-  "edu":[
-    {"title" : "", "name" : "", "start_date" : "", "end_date" : ""},
-    {"title" : "", "name" : "", "start_date" : "", "end_date" : ""}
-  ],
-  "cert":[
-    {"title" : "", "name": "", "date": ""},
-    {"title" : "", "name": "", "date": ""}
-  ]
+	"link": {
+		"facebook": "",
+		"github": "",
+		"instagram": "",
+		"linkedin": "",
+		"twitter": "",
+		"website": ""
+	},
+	"user": {
+		"name": "",
+		"jab": "",
+		"bio": "",
+		"email": ""
+	},
+	"project": [{
+		"name": "",
+		"charge": "",
+		"start_date": "",
+		"end_date": "",
+		"bio": ""
+	}, {
+		"name": "",
+		"charge": "",
+		"start_date": "",
+		"end_date": "",
+		"bio": ""
+	}, {
+		"name": "",
+		"charge": "",
+		"start_date": "",
+		"end_date": "",
+		"bio": ""
+	}],
+	"skill": [{
+		"title": "",
+		"content": [{
+			"name": ["", "", "", ""]
+		}, {
+			"name": ["", "", "", ""]
+		}]
+	}, {
+		"title": "",
+		"content": [{
+			"name": ["", "", "", ""]
+		}, {
+			"name": ["", "", "", ""]
+		}]
+	}],
+	"exper": [{
+		"name": "",
+		"charge": "",
+		"start_date": "",
+		"end_date": "",
+		"address": "",
+		"bio": ["", ""]
+	}, {
+		"name": "",
+		"charge": "",
+		"start_date": "",
+		"end_date": "",
+		"address": "",
+		"bio": ["", ""]
+	}, {
+		"name": "",
+		"charge": "",
+		"start_date": "",
+		"end_date": "",
+		"address": "",
+		"bio": ["", ""]
+	}],
+	"edu": [{
+		"title": "",
+		"name": "",
+		"start_date": "",
+		"end_date": ""
+	}, {
+		"title": "",
+		"name": "",
+		"start_date": "",
+		"end_date": ""
+	}],
+	"cert": [{
+		"title": "",
+		"name": "",
+		"date": ""
+	}, {
+		"title": "",
+		"name": "",
+		"date": ""
+	}]
 }
