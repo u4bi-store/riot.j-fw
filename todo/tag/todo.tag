@@ -9,7 +9,7 @@
   </ul>
 
   <form onsubmit={ add }>
-    <input>
+    <input ref="input">
     <button>추가 (갯수 :{ items.length })</button>
   </form>
 
@@ -17,7 +17,13 @@
     this.items = opts.items;
     
     add(e) {
-      console.log('add');
+      if (this.refs.input.value) {
+        console.log('add');
+        this.items.push({ title: this.refs.input.value });
+        this.refs.input.value = '';
+        
+      }
+      
       e.preventDefault();
     }
 
