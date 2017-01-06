@@ -10,7 +10,7 @@
   "user":{
     "name" : "",
     "jab" : "",
-    "bio" : ""
+    "bio" : "",
     "email" : ""
   },
   "project":[
@@ -19,14 +19,25 @@
     {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "bio" : ""}
   ],
   "skill":[
-    { "title":"", "name":["","","","","","","","",""] },
-    { "title":"", "name":["","","","","","","","",""] },
-    { "title":"", "name":["","","","","","","","",""] }
+    {
+      "title":"",
+      "content":[
+        {"name": ["", "", "", ""]},
+        {"name": ["", "", "", ""]}
+      ]
+    },
+    {
+      "title":"",
+      "content":[
+        {"name": ["", "", "", ""]},
+        {"name": ["", "", "", ""]}
+      ]
+    }
   ],
   "exper":[
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ""},
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ""},
-    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ""}
+    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ["",""] },
+    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ["",""] },
+    {"name" : "", "charge" : "", "start_date" : "", "end_date" : "", "address" : "", "bio" : ["",""] }
   ],
   "edu":[
     {"title" : "", "name" : "", "start_date" : "", "end_date" : ""},
