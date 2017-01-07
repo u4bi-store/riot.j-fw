@@ -7,9 +7,9 @@
       <div class="top-bar">
         <h2>{resume.user.jab}</h2>
         <ul>
-          <li each={ i in icon }><a href="" itemprop="url" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <li each={ v, n in icon }><a href="{resume.link[n]}" itemprop="url" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d="{i}"/></svg></a></li>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d="{v}"/></svg></a></li>
         </ul>
       </div>
       <div class="top-content"><p>{resume.user.bio}</p></div>
