@@ -126,3 +126,9 @@ a:hover svg path{
   -moz-transition:all 0.2s ease;
   transition:all 0.2s ease;
 }
+
+.copyright{
+  font-size: 0.5rem;
+  color:#999;
+  text-align:right;
+}

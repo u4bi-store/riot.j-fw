@@ -17,7 +17,7 @@
 
     <!-- 프로젝트 섹션 -->
     <section>
-      <header>ㄴ
+      <header>
         <h2>Projects</h2>
       </header>
       <div each={ resume.project }>
@@ -74,7 +74,7 @@
     <!-- 하단 푸터 -->
     <footer>
       <p><a href="mailto:u4bi@u4bi.com">contact me</a>.</p>
-      <p>Made by <a href="https://github.com/u4bi">@u4bi</a>. Fork me on <a href="https://github.com/u4bi-dev/resume">GitHub</a>.</p>
+      <p class="copyright">Made by <a href="https://github.com/u4bi">@u4bi</a>. Fork me on <a href="https://github.com/u4bi-dev">GitHub</a>.</p>
     </footer>
   
   <script>
