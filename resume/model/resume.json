@@ -1,11 +1,11 @@
 {
 	"link": {
-		"facebook": "",
+		"facebook": "https://www.facebook.com/",
 		"github": "https://github.com/u4bi",
-		"instagram": "",
-		"linkedin": "",
-		"twitter": "",
-		"website": ""
+		"instagram": "https://www.instagram.com/",
+		"linkedin": "https://kr.linkedin.com/",
+		"twitter": "https://twitter.com/",
+		"website": "http://u4bi.com"
 	},
 	"user": {
 		"name": "Myungjae Yu",
@@ -14,79 +14,77 @@
 		"email": "u4bi@u4bi.com"
 	},
 	"project": [{
-		"name": "",
-		"charge": "",
-		"start_date": "",
-		"end_date": "",
-		"bio": ""
+		"name": "Project Name 1",
+		"charge": "Project Charge",
+		"start_date": "January 6, 2017",
+		"end_date": "January 6, 2017",
+		"bio": "Project Bio"
 	}, {
-		"name": "",
-		"charge": "",
-		"start_date": "",
-		"end_date": "",
-		"bio": ""
+		"name": "Project Name 2",
+		"charge": "Project Charge",
+		"start_date": "January 7, 2017",
+		"end_date": "January 7, 2017",
+		"bio": "Project Bio"
 	}, {
-		"name": "",
-		"charge": "",
-		"start_date": "",
-		"end_date": "",
-		"bio": ""
+		"name": "Project Name 3",
+		"charge": "Project Charge",
+		"start_date": "January 7, 2017",
+		"end_date": "Present",
+		"bio": "Project Bio"
 	}],
 	"skill": [{
 		"title": "Web Technologies",
 		"content": [{
 			"name": ["HTML", "CSS", "JavaScript", "TypeScript"]
 		}, {
-			"name": ["Servlets"]
+			"name": ["Angular2"]
 		}]
 	}, {
-		"title": "",
+		"title": "Mobile Technologies",
 		"content": [{
-			"name": ["", "", "", ""]
-		}, {
-			"name": ["", "", "", ""]
+			"name": ["Android", "ionic2", "", ""]
 		}]
 	}],
 	"exper": [{
-		"name": "",
-		"charge": "",
-		"start_date": "",
-		"end_date": "",
-		"address": "",
-		"bio": ["", ""]
+		"name": "Experience Company 1",
+		"charge": "Experience Charge",
+		"start_date": "January 6, 2017",
+		"end_date": "January 6, 2017",
+		"address": "South Korea",
+		"bio": ["Experience Bio 1", "Experience Bio 2"]
 	}, {
-		"name": "",
-		"charge": "",
-		"start_date": "",
-		"end_date": "",
-		"address": "",
-		"bio": ["", ""]
+		"name": "Experience Company 2",
+		"charge": "Experience Charge",
+		"start_date": "January 7, 2017",
+		"end_date": "January 7, 2017",
+		"address": "South Korea",
+		"bio": ["Experience Bio 1", "Experience Bio 2"]
 	}, {
-		"name": "",
-		"charge": "",
-		"start_date": "",
-		"end_date": "",
-		"address": "",
-		"bio": ["", ""]
+		"name": "Experience Company 3",
+		"charge": "Experience Charge",
+		"start_date": "January 7, 2017",
+		"end_date": "Present",
+		"address": "South Korea",
+		"bio": ["Experience Bio 1", "Experience Bio 1"]
 	}],
 	"edu": [{
-		"title": "",
-		"name": "",
-		"start_date": "",
-		"end_date": ""
+		"title": "Education Organization 1",
+		"name": "Education Name",
+		"start_date": "January 6, 2017",
+		"end_date": "January 6, 2017"
 	}, {
-		"title": "",
-		"name": "",
-		"start_date": "",
-		"end_date": ""
+		"title": "Education Organization 2",
+		"name": "Education Name",
+		"start_date": "January 7, 2017",
+		"end_date": "Present"
 	}],
 	"cert": [{
-		"title": "",
-		"name": "",
-		"date": ""
+		"title": "Certification 1",
+		"name": "Certification Name",
+		"date": "January 6, 2017"
 	}, {
-		"title": "",
-		"name": "",
-		"date": ""
+		"title": "Certification 1",
+		"name": "Certification Name",
+		"date": "January 7, 2017"
 	}]
 }

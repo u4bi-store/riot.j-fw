@@ -46,8 +46,8 @@
       <div each={ resume.exper }>
         <h3>{name}</h3>
         <h4>{charge} &bull; {start_date} &mdash; {end_date} - {address}</h4>
-        <ul>
-          <li>{bio}</li>
+        <ul each={ i in bio }>
+          <li>{i}</li>
         </ul>
       </div>
     </section>
@@ -59,14 +59,14 @@
         <h2>Education and Certification</h2>
       </header>
       <div>
-        <p each={ resume.edu }>
+        <div each={ resume.edu }>
           <h3>{title}</h3>
           <h4>{name} &bull; {start_date} -{end_date}</h4>
-        </p>
-        <p each={ resume.cert }>
+        </div>
+        <div each={ resume.cert }>
           <h3>{title}</h3>
           <h4>{name} &bull; {date}</h4>
-        </p>
+        </div>
       </div>
     </section>
 
