@@ -4,7 +4,6 @@
     this.db = opts.data;
     
     // setDB('dudu', 'soonja', 'soonja@u4bi.com');
-    
     function setDB(userId, name, email) {
       this.db.ref('users/' + userId).set({
         username: name,
@@ -13,7 +12,6 @@
     }
     
     // updDB('dudu', 'jasoon', 'soonja@u4bi.com');
-    
     function updDB(userId, name, email){
       this.db.ref('users/'+ userId).update({
         username: name,
@@ -21,9 +19,16 @@
       });
     }
     
-    delDB('dudu');
+    // delDB('dudu');
     function delDB(userId){
       this.db.ref('users/'+ userId).remove();
+    }
+    
+    search('users/');
+    function search(path){
+      this.db.ref(path).once('value', function(snap) {
+        console.log(snap.val());
+      });
     }
   </script>
 </firebase>
