@@ -5,7 +5,9 @@
   <show-app />
 
   <script>
-    route.start(true);
+    this.on('mount', function() {
+      route.start(true);
+    });
   </script>
   
 </app>
