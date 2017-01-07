@@ -5,7 +5,7 @@
   <show-app />
 
   <script>
-    console.log(route);
+    route.start(true);
   </script>
   
 </app>
