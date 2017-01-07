@@ -21,30 +21,19 @@
     
     add(e){
       if (this.refs.input.value) {
-        console.log('추가');  
         this.items.push({ title: this.refs.input.value });
-        this.refs.input.value = '';
-        
-        console.log(this.items);
+        this.refs.input.value = '';        
       }
-      
       e.preventDefault();
     }
     
     del(e){
-      console.log('삭제');
-      console.log(this.items);
-      this.items = this.items.filter(function(item){ return !item.done;
-      });
-      
-      console.log(this.items);
+       this.items = this.items.filter(function(item){ return !item.done;
+       });
     }
     
     check(e){
-      console.log('체크');
       e.item.done = !e.item.done;
-      
-      console.log(e.item.done);
     }
     
     /* 노드체크*/
@@ -52,5 +41,4 @@
   </script>
   
   <style> :scope { font-size: 2rem }</style>
-  
 </todo>
