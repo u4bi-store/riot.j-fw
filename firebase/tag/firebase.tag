@@ -12,7 +12,8 @@
       });
     }
     
-    updDB('dudu', 'jasoon', 'soonja@u4bi.com');
+    // updDB('dudu', 'jasoon', 'soonja@u4bi.com');
+    
     function updDB(userId, name, email){
       this.db.ref('users/'+ userId).update({
         username: name,
@@ -20,5 +21,9 @@
       });
     }
     
+    delDB('dudu');
+    function delDB(userId){
+      this.db.ref('users/'+ userId).remove();
+    }
   </script>
 </firebase>
