@@ -7,9 +7,9 @@
       <div class="top-bar">
         <h2>{resume.user.jab}</h2>
         <ul>
-          <li><a href="" itemprop="url" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <li each={ i in icon }><a href="" itemprop="url" target="_blank"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d=""/></svg></a></li>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d="{i}"/></svg></a></li>
         </ul>
       </div>
       <div class="top-content"><p>{resume.user.bio}</p></div>
@@ -17,7 +17,7 @@
 
     <!-- 프로젝트 섹션 -->
     <section>
-      <header>
+      <header>ㄴ
         <h2>Projects</h2>
       </header>
       <div each={ resume.project }>
@@ -79,6 +79,17 @@
   
   <script>
     this.resume = opts.data;
-    console.log(this.resume);
+    
+    var self = this;
+    
+    marmottajax({
+      url: 'model/icon.json',
+      json: true
+
+    }).success(function(result) {
+      self.icon = result;
+      self.update();
+    });
+    
   </script>
 </resume>
