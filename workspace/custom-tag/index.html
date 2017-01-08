@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>custom-tag</title>
+  
+  <script src="../../lib/marmottajax.min.js"></script>
+  <script src="../../lib/riot-compiler.min.js"></script>
+</head>
+<body>
+<!-- Riot은 매우 작은 라이브러리임.
+     Riot은 사실 React에 많은 영향을 받았다 함. React의 라이트 버전처럼 느껴진다함.
+     또한 Polymer의 장점도 반영되었다 함.
+     전반적인 코드는 마치 자바스크립트 vs 커피스크립트를 보는것처럼 간결하다 함.
+-->
+
+<!-- 커스텀 태그
+     모든 브라우저에서 Polymer처럼 커스텀 태그를 쓸수 있다함.
+     하지만 컴포넌트의 생김새는 React와 유사하다함
+-->
+  
+  <item></item>
+  <script type="riot/tag" src="tag/item.tag"></script>
+  <script>riot.mount('item')</script>
+  <!-- 별다른 해석 없이도 컴포넌트의 기능을 이해하는데 큰 어려움 없을꺼임. -->
+  
+  <!-- React를 본 사람이라면 비슷한점을 많이 느낄꺼라함.
+       하지만 Riot는 훨씬 간결한 문법을 제공한다 함. -->
+  
+  <!-- Riot은 DOM파싱시에 모든 DOM 노드의 표현들을 배열로 참조하고 있다가
+       변화가 생기는 노드에 대해서만 업데이트 해준다 함.
+       
+       그런데 React와 달리 Riot은 HTML 구조는 고정되어 있다 함.
+       즉 div가 라벨로 변경될 수 없음.
+  -->
+
+  
+  <!-- Riot는 단지 참조하고 있는 표현(Expression)만 업데이트 하고
+       그 하위 노드에 대한 복잡한 교체는 하지 않음으로
+       DOM의 업데이트를 매우 빠르게 처리할 수 있다고 함. -->
+  
+  
+  <!-- 따라서 Riot은 크게 커스텀 태그, 이벤트 옵저버, 라우터로 나누어짐
+       총 세가지 기본 구성요소로 미니미니한 기능을 제공함
+       따라서 혼란 줄이고 빠르게 개발에 집중할 수 있도록 도와줌 -->
+</body>
+</html>
