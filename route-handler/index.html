@@ -3,17 +3,28 @@
 <head>
   <meta charset='utf-8'>
   <meta name="viewport" content="user-scalable=no">
-  <title>router-handler</title>
-  
-  <link rel="stylesheet" href="css/style.css"/>
+  <title>route-handler</title>
   
   <script src="../lib/marmottajax.min.js"></script>
+  
+  <script src="../lib/page.min.js"></script>
   <script src="../lib/riot-compiler.min.js"></script>
   <script src="../lib/riot-routehandler.js"></script>
 </head>
 <body>
+  <script type="riot/tag" src="tag/main.tag"></script>
+  <script type="riot/tag" src="tag/board.tag"></script>
+  <script type="riot/tag" src="tag/board/free.tag"></script>
   
-  <routehandler></routehandler>
+  <div>
+    <ul>
+      <li><a href="/">메인</a></li>
+      <li><a href="/board">게시판</a></li>
+      <li><a href="/main/u4bi">메인 파람값 : u4bi</a></li>
+    </ul>
+    
+    <routehandler></routehandler>
+  </div>
   <script src="js/index.js"></script>
   
 </body>
