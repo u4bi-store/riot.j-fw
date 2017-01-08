@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>mixin</title>
+  
+  <script src="../../lib/marmottajax.min.js"></script>
+  <script src="../../lib/riot-compiler.min.js"></script>
+</head>
+<body>
+  
+  <apple></apple>
+  <orange></orange>
+  
+  <!-- 믹스인은 태그들간의 기능을 공유하기 쉽도록 해줌 -->
+  
+  <script type="riot/tag" src="tag/apple.tag"></script>
+  <script type="riot/tag" src="tag/orange.tag"></script>
+  <script>
+  
+  var box = 'good';
+  riot.mixin('boxname', box);
+  /* 믹스인 기본 베이직*/
+
+    
+  var OptsMixin = {
+    get: function() {
+      return this.opts
+    },
+    set: function(opts, update) {
+      this.opts = opts
+      if (!update) this.update()
+      return this
+    },
+    test: function(){ /* 함수 호출 테스트 */
+      console.log('test');
+    }
+  }  
+  riot.mixin('optsMixin', OptsMixin);
+  /* 이 믹스인된OptsMixin함수는 <apple>, <orange> 태그 인스턴스의 opts 객체에 접근할 수 있게 해줌
+  */
+  
+    
+  /* 마운트 */  
+  riot.mount('apple', {gogo : 'apple_gogo'});
+  riot.mount('orange', {dodo : 'orange_dodo'});
+  
+  </script>
+  
+</body>
+</html>
