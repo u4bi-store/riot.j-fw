@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>mount</title>
+  
+  <script src="../../lib/marmottajax.min.js"></script>
+  <script src="../../lib/riot-compiler.min.js"></script>
+</head>
+<body>
+  
+  <item></item>
+  <script type="riot/tag" src="tag/item.tag"></script>
+  
+  <!-- 태그를 생성하면 페이지에서 아래처럼 마운트 할 수 있음 -->
+  <script>riot.mount('item', { title: '타이틀' });</script>
+  <!-- 또한 두번째 인자에 데이터를 넘겨줄 수 도 있음
+       간단한 자바스크립트 객체나 flux까지 무엇이든 넘길 수 있다 함 -->
+
+</body>
+</html>
