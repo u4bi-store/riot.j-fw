@@ -22,6 +22,10 @@
     </p>
   </div>
   
+  <custom-tag each={ items }>
+    <p>{ title }</p>
+  </custom-tag>
+  
   <script>
     this.isSpan = true;
     
