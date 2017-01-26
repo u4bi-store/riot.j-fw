@@ -1,5 +1,11 @@
 <item>
-  control_structure init
-  <script>    
+  
+  <div if={ isSpan }>
+    <span>if control</span>
+  </div>
+  
+  <script>
+    this.isSpan = true;
+    
   </script>
 </item>
