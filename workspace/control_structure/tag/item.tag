@@ -14,7 +14,12 @@
     <p>
       <span onclick={ parent.remove }>{ title }</span>
     </p>
-    
+  </div>
+  
+  <div each={ words }>
+    <p>
+      <span onclick={ parent.removeWord }>{ title }</span>
+    </p>
   </div>
   
   <script>
@@ -36,5 +41,21 @@
       console.log(event);
     }
     
+    this.words = [
+      { title: 'WORD_A'},
+      { title: 'WORD_B'},
+      { title: 'WORD_C'},
+      { title: 'WORD_D'}
+    ];
+    
+    removeWord(e){
+      var word = e.item;
+      console.log('word : '+word);
+      
+      var index = this.words.indexOf(word);
+      console.log('index : '+index);
+      
+      this.words.splice(index, 1);
+    }
   </script>
 </item>
