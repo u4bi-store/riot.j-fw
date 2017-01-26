@@ -39,7 +39,22 @@
   
   <div each="{ item in items }" no-reorder>{ item.title }</div>
   
+  <dl>
+    <virtual each={obj in objects}>
+      <dt>{obj.key}</dt>
+      <dd>{obj.value}</dd>
+    </virtual>
+  </dl>
+  
   <script>
+    
+    this.objects = [
+      { key : 'OBJ_A', value : 'OBJ_1'},
+      { key : 'OBJ_B', value : 'OBJ_2'},
+      { key : 'OBJ_C', value : 'OBJ_3'},
+      { key : 'OBJ_D', value : 'OBJ_4'}
+    ];
+    
     this.isSpan = true;
     
     this.items = [
