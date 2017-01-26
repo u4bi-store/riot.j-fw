@@ -26,6 +26,10 @@
     <p>{ title }</p>
   </custom-tag>
   
+  <p each="{ name, i in array}"> <!-- key , value  in variable -->
+    <span>{ i } : { name }</span>  
+  </p>
+  
   <script>
     this.isSpan = true;
     
@@ -61,5 +65,13 @@
       
       this.words.splice(index, 1);
     }
+    
+    this.array = [
+      true,
+      110,
+      Math.random(),
+      'fourth'
+    ];
+    
   </script>
 </item>
