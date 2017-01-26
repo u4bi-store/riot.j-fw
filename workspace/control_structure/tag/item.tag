@@ -46,7 +46,17 @@
     </virtual>
   </dl>
   
+  <div data-is={ item }></div>
+  <button onclick={ switchComponent }>{component}</button>
+
   <script>
+
+    
+    this.component = 'foo';
+    switchComponent(){
+      console.log('df');
+      this.component = 'bar';
+    }
     
     this.objects = [
       { key : 'OBJ_A', value : 'OBJ_1'},
