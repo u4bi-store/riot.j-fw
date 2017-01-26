@@ -30,6 +30,14 @@
     <span>{ i } : { name }</span>  
   </p>
   
+  <p each="{ value, name  in obj }">{ name } = { value }</p>
+  this.obj = {
+    key1: 'value1',
+    key2: 1110.8900,
+    key3: Math.random()
+  }
+  
+  
   <script>
     this.isSpan = true;
     
