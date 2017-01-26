@@ -37,6 +37,7 @@
     key3: Math.random()
   }
   
+  <div each="{ item in items }" no-reorder>{ item.title }</div>
   
   <script>
     this.isSpan = true;
