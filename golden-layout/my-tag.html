@@ -1,0 +1,63 @@
+<user-categori>
+  <ul class="usercategori">
+    <li each = {value in categori} onclick={ selectCategori }>{ value.name }</li>
+  </ul>
+  
+  <script>
+    this.categori = [
+        { name: 'categori A', info: 'categori info A'},
+        { name: 'categori B', info: 'categori info B'},
+    ];
+    
+    selectCategori(e) {
+      console.log('categori name : '+e.item.value.name);
+      
+    }
+  </script>
+</user-categori>
+
+<user-list>
+  
+  <ul class="userlist">
+    <li each={user in users} onclick={ selectUser }>{ user.name }</li>
+  </ul>
+  
+  <script>
+    this.users = [
+        { name: '이름 A', bio: '내용 A'},
+        { name: '이름 B', bio: '내용 B'},
+    ];
+    
+    selectUser(e) {
+      opts.eventHub.emit('user-select', e.item.user);
+    }
+  </script>
+</user-list>
+
+
+<user-detail>
+  <div if={user.name} class="userdetails">
+      <h2>{user.name}</h2>
+      <p>{user.bio}</p>
+  </div>
+  
+  <div if={!user.name} class="userdetails">선택없음</div>
+  
+  <script>
+  
+    setUser(userData) {
+      this.user = userData;
+      this.update();
+    }
+    
+    this.user = {};
+    
+    opts.eventHub.on('user-select', this.setUser);
+    
+    this.on('unmount', function() {
+      opts.entHub.off( 'user-select', this.setUser )
+    });
+    
+  </script>
+  
+</user-detail>
