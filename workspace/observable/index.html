@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>observable</title>
+  
+  <script src="../../lib/marmottajax.min.js"></script>
+  <script src="../../lib/riot-compiler.min.js"></script>
+</head>
+<body>
+  
+  <item></item>
+  <!-- Observable은 이벤트를 주고 받기 위한 수단이라 볼 수 있음
+       그러니깐 종속적이거나 강하게 결합된 방식없이 모듈화 할수 있도록 도와줌
+       이러한 방식을 사용하면 큰 프로젝트를 다 작고 단순하게 나누고
+       프로젝트의 다른 부분에 영향을 주지않고 모듈을 추가 삭제 수정하는
+       작업이 가능하도록 해준다 함.
+
+       주된 사용 패턴으로 어플리케이션의 하나의 코어와 여러개의 확장으로 나누는거임.
+       그러니깐 중심이 되는 코어는 어떤 사건이 발생했을 때 이벤트를 발생시킴.
+       
+       사건이라 함은 아이템이 추가되거나 삭제되거나 또는 서버로부터 무언가를
+       로딩되는 등의 일들을 의미한다고 함.
+       
+       이러한 환경에서 코어는 각 확장 모듈들에 대해 알지 못함.
+       단지 확장 모듈들이 코어를 바라볼 뿐임.
+       코어와 다른 확장모듈에 영향을 주지않고 모듈을 추가 수정 삭제가 가능함.
+       이러한 방식을 약한 결합이라고 함. 루즈 커플링 loose coupling
+
+
+       즉 결국은 확장 모듈을 쉽게 개발하기 위해서는 코어와 이벤트를 잘 설계하고 유지해야함.
+
+  -->
+  
+  <script type="riot/tag" src="tag/item.tag"></script>
+  <script>
+      riot.mount('item');
+    
+      function Car() {
+        riot.observable(this);
+        
+        this.on('start', function(data_A, data_B){
+          console.log('car on start test : '+data_A+' '+data_B);
+        });
+        this.on('start.honda', function(data_A, data_B){
+          console.log('car on start Honda test : '+data_A+' '+data_B);
+          /* 인자로 넘겨 받아 호출함*/
+          
+        });
+        this.on('start.yamaha', function(data_A, data_B){
+          console.log('car on start Yamaha test');
+        });
+        
+        this.one('start.demian', function() {
+            console.log('car one start Demian test');
+            alert('Demian');
+        });
+        
+      }
+    
+      function Timer(){
+        var el = riot.observable(this);
+        el.on('start', function(){
+          console.log('timer start test');
+        });
+
+      }
+
+      var car = new Car();
+      /* 트리거될 때 온이 발동함 인자를 넘길 수 있음 인자를 넘기면 on에서 받음*/
+      car.trigger('start.honda', { title : 89}, true);
+    
+      car.trigger('start.yamaha');
+      car.trigger('start.yamaha');
+      car.trigger('start.yamaha');
+      /* this.one : 함수가 여러번 실행되도 한번만*/
+      car.trigger('start.demian');
+      car.trigger('start.demian');
+      car.trigger('start.demian');
+    
+      car.trigger('start.mycar');
+    
+      var timer = new Timer();
+      timer.trigger('start');
+    
+  </script>
+
+</body>
+</html>
