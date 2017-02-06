@@ -1,6 +1,15 @@
 <firebase>
-
+  
+  <div if={users}>
+    <ul each={key,value in users}>
+      {value}
+      <li>{key.username}</li>
+      <li>{key.email}</li>
+    </ul>
+  </div>
+  
   <script>
+    var self = this; 
     this.db = opts.data;
     
     // setDB('dudu', 'soonja', 'soonja@u4bi.com');
@@ -27,7 +36,10 @@
     search('users/');
     function search(path){
       this.db.ref(path).once('value', function(snap) {
-        console.log(snap.val());
+
+        self.users = snap.val();
+        console.log(self.users);
+        self.update();
       });
     }
   </script>
