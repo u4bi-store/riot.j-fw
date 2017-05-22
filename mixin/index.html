@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>mixin</title>
+  
+  <script src="../lib/riot-compiler.min.js"></script>
+</head>
+<body>
+  
+  <A></A>
+  <B></B>
+
+  <script type="riot/tag" src="tag/A.htm"></script>
+  <script type="riot/tag" src="tag/B.htm"></script>
+
+  <script>
+
+  riot.mount('A', {A_value : 'A입니다.'});
+  riot.mount('B', {B_value : 'B입니다.'});
+  
+  </script>
+  
+</body>
+</html>
