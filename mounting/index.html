@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>mounting</title>
+  
+  <script src="../lib/riot-compiler.min.js"></script>
+</head>
+<body>
+  
+  <A></A>
+  <B></B>
+
+  <script type="riot/tag" src="tag/A.htm"></script>
+  <script type="riot/tag" src="tag/B.htm"></script>
+
+  <script>
+
+  riot.mount('A, B', {AB : 'AB입니다.'});
+  
+  </script>
+  
+</body>
+</html>
